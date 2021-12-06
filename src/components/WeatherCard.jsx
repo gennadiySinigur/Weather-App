@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './WeatherCard.css';
+import {API_KEY} from '../API_KEY';
 
 
 const WeatherCard = ({city}) => {
   const [weather, setWeather] = useState(null);
 
-  const baseUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=b2f08377a7752903b9657f88e93ad7ed`;
+  // const baseUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=b2f08377a7752903b9657f88e93ad7ed`;
+
+  const baseUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
 
   useEffect(() => {
     axios.get(baseUrl).then((response) => {
