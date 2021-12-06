@@ -1,0 +1,16 @@
+.weatherCard {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.city {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.temp {
+  font-size: 4rem;
+}

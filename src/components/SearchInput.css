@@ -1,0 +1,32 @@
+.searchInput {
+  margin-bottom: 5em;
+}
+
+.searchInput input {
+  border: none;
+  outline: none;
+  padding: 0.5em 0.5em 0.5em;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1em;
+  border-radius: 7px;
+  color: #0d5b5e;
+}
+
+.searchInput button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 7px;
+  background-color: #17888a;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.searchInput button:hover {
+  background-color: #106a6b;
+}
